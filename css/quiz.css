@@ -1,0 +1,91 @@
+/* Estilos Globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #0073bb;
+}
+
+#start-screen, #rules-screen, #quiz-container, #rank-screen {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Centraliza os botões e o conteúdo */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+a{
+    text-decoration: none;
+}
+/* Estilização específica para a área de resposta e perguntas */
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.answer-btn:hover {
+    background-color: #0056b3;
+}
+
+#timer, #final-section {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 20px); /* Para garantir que a largura inclua o padding */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#rank-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#rank-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body, html {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,168 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15124b;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo img {
+    width: 150px;
+}
+img{
+    width: 200px;
+    
+}
+p{
+   text-align: justify;
+   padding: 20px;
+}
+
+/* Estilização do container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilização do vídeo principal (usando iframe) */
+.main-video {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.main-video iframe {
+    width: 100%;
+    height: 515px; /* Altura padrão dos iframes do YouTube */
+    border-radius: 10px;
+}
+
+/* Estilização da lista de vídeos */
+.video-list {
+    flex: 1;
+    max-height: 500px;
+    overflow-y: scroll; /* Rolagem vertical */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.video-item iframe {
+    width: 170px;
+    height: 130px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.video-item p {
+    margin: 0;
+    color: #f9f6f6;
+    font-size: 16px;
+}
+
+/* Estilos adicionais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131d5e;
+    margin: 0;
+}
+
+.container {
+    margin: 20px;
+    background-color: #18406e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.video-item:hover p {
+    color: #00f2ff;
+}
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .main-video {
+        margin-right: 0;
+    }
+
+    .main-video iframe {
+        height: 250px;
+    }
+
+    .video-list {
+        max-height: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .video-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-item p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-video iframe {
+        height: 200px;
+    }
+
+    .video-list {
+        max-height: 250px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .video-item iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-item p {
+        font-size: 12px;
+    }
+}
