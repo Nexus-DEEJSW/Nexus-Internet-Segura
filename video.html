@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="fonts/css/all.min.css">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo Página</title>
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" />
+        </div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="kids.html">Crianças</a></li>
+            <li><a href="https://youtube.com/channel/UCYKeu41LiJOIoyEkStWqCLw?si=sryUKoZLFaPDsyWF">Canal Recomendado</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Video Principal -->
+        <div class="main-video">
+            <iframe id="mainVideo" width="560" height="315" src="https://www.youtube.com/embed/yDTCOGoD6Hw?si=tT6sVTSFeteg_aTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Lista de Videos -->
+        <div class="video-list">
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/yDTCOGoD6Hw?si=tT6sVTSFeteg_aTU')">
+                <img src="images/tamb/Cyber.jpg" alt="Cyberbule é errado!" />
+                <p>Cyberbullying</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/I-1gisoOh2o?si=0bJKVEJlDnaKNp0L')">
+                <img src="images/tamb/vendas-de-compras-da-cyber-monday.jpg" alt="Primeira Compra Online" />
+                <p>Primeira Compra Online</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/WIPHLimt-Mw?si=1wJIxEAEFjfUp7OS')">
+                <img src="images/tamb/Segurança.jpg" alt="Sua senha é sua identidade digital!" />
+                <p>Sua senha é <br> sua identidade digital!</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/a51hXUUnSWs?si=xVNriUTYVwLL3gY5')">
+                <img src="images/tamb/20673.jpg" alt="Phishing Scam" />
+                <p>Phishing Scam</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/LBDdiENX0hY?si=xCnkdZAZvmpbXwZn')">
+                <img src="images/tamb/portrait-confident-young-lady-with-blue-eyes-blonde-hair-posing-with-her-photo-camera-showing-she-wants-be-photographer-copy-space.jpg" alt="Como tirar fotos de um jeito legal" />
+                <p>Como tirar fotos <br> de um jeito legal</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/mvajWG46gY0?si=n54T6enajQ5-cZrS')">
+                <img src="images/tamb/roubo-de-ideia-ou-plagio-pirataria.avif" alt="Plágio e Pirataria são crimes" />
+                <p>Plágio e Pirataria são crimes</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/video.js"></script>
+</body>
+</html>

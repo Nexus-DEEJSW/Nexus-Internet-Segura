@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Perigos da Internet</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div id="start-screen">
+        <h1>Bem-vindo ao Quiz sobre Perigos da Internet</h1>
+        <button onclick="showRules()">Iniciar Quiz</button>
+        <button onclick="showRank()">Ranking</button>
+        <button onclick="window.location.href='kids.html'">Voltar</button>
+    </div>
+
+    <!-- Regras do Quiz -->
+    <div id="rules-screen" style="display: none;">
+        <h2>Regras do Quiz</h2>
+        <p>Você terá 15 segundos para responder cada pergunta. Uma vez que clicar em uma resposta, não será possível alterá-la. Boa sorte!</p>
+        <button onclick="startQuiz()">Começar Quiz</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz-container" style="display: none;">
+        <h1>Quiz: Perigos da Internet</h1>
+        <div id="question-container">
+            <p id="question">Pergunta vai aqui</p>
+            <button class="answer-btn" onclick="selectAnswer(0)">Resposta 1</button>
+            <button class="answer-btn" onclick="selectAnswer(1)">Resposta 2</button>
+            <button class="answer-btn" onclick="selectAnswer(2)">Resposta 3</button>
+            <button class="answer-btn" onclick="selectAnswer(3)">Resposta 4</button>
+        </div>
+        <div id="timer">Tempo: <span id="time">15</span> segundos</div>
+        <div id="final-section" style="display: none;">
+            <p>Quiz terminado!</p>
+            <label for="name">Nome: </label>
+            <input type="text" id="name" required>
+            <button onclick="saveResults()">Salvar Resultados</button>
+            <button onclick="window.location.href='quiz.html'">Voltar</button>
+        </div>
+    </div>
+
+    <!-- Ranking -->
+    <div id="rank-screen" style="display: none;">
+        <h2>Ranking</h2>
+        <ul id="rank-list">
+            <!-- Lista de ranking gerada dinamicamente -->
+        </ul>
+        <button onclick="goBack()">Voltar</button>
+    </div>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/quizserver.js"></script>
+</body>
+</html>
