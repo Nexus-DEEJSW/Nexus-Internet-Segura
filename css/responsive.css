@@ -234,7 +234,7 @@ File Name: responsive.css
         padding-top: 80px;
     }
     .logo {
-        float: left;
+        width: 200px;
     }
     .about_img {
         margin-top: 30px;
